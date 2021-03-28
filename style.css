@@ -98,11 +98,13 @@ header img {
     background-size: cover;
     background-size: 100%;
   }
+
   .header {
     padding: 2.5rem 2.5rem 3.5rem;
     text-align: left;
     overflow-x: hidden;
   }
+
   .main {
     width: 100%;
     display: flex;
