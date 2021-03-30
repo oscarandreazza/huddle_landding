@@ -90,26 +90,57 @@ main {
   transition: 0.3s;
 }
 
-/* @media screen and (max-width: 375px) {
+/* ===========Responsive================== */
+@media screen and (max-width: 400px) {
   body {
     height: 100%;
-    background-image: url(../huddle_landing/images/bg-mobile.svg);
+    background-image: url(./images/bg-mobile.svg);
     background-size: cover;
     background-size: 100%;
   }
+}
 
-  .header {
-    padding: 2.5rem 2.5rem 3.5rem;
-    text-align: left;
-    overflow-x: hidden;
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 80px;
   }
 
-  .main {
-    width: 100%;
+  header {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .folder {
+    margin-bottom: 40px;
+  }
+
+  .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  .credit {
+    justify-content: center;
+    margin-top: 10px;
   }
 }
- */
+
+@media screen and (min-width: 1025px) {
+  main {
+    justify-content: space-between;
+  }
+
+  .folder {
+    width: 55%;
+    margin-right: 20px;
+  }
+
+  .credit {
+    margin-top: 10px;
+    justify-content: flex-end;
+  }
+}
